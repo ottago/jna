@@ -121,7 +121,7 @@ public abstract class Netapi32Util {
 
     /**
      * Return the domain/workgroup join status for a computer. 
-     * @return Join status.
+     * @return Join status. @see icom.sun.jna.platform.win32.LMJoin.NETSETUP_JOIN_STATUS
      */
     public static int getJoinStatus() {
         return getJoinStatus(null);
