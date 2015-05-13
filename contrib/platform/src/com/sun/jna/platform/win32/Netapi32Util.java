@@ -128,9 +128,9 @@ public abstract class Netapi32Util {
     }
 	
     /**
-     * Return the domain/workgroup join status for a computer. 
+     * Return the domain/workgroup join status for a computer.
      * @param computerName Computer name.
-     * @return Join status.
+     * @return Join status. @see icom.sun.jna.platform.win32.LMJoin.NETSETUP_JOIN_STATUS
      */
     public static int getJoinStatus(String computerName) {
         PointerByReference lpNameBuffer = new PointerByReference();
